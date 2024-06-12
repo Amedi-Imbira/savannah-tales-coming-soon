@@ -28,7 +28,9 @@
 #hero-background {
   background-image: url('src/assets/bg.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center center center;
   background-repeat: no-repeat;
 }
 </style>
+
+https://vscode.dev/profile/github/fd118eabdf7d7ccb7e15c8bd2f0378b0
