@@ -1,7 +1,14 @@
 <script>
-// import './assets/style.scss'
+import HomeView from './views/HomeView.vue'
+
+export default {
+  components: {
+    HomeView,
+  }
+}
+
 </script>
+
 <template>
-  <h1>Hello world</h1>
-  <button class="button">Click here!</button>
+  <HomeView />
 </template>
