@@ -1,23 +1,34 @@
 <template>
-    <section class="hero is-medium has-text-centered">
-        <div class="hero-body">
-            <div class="container">
-                <p class="title has-text-weight-light">We Are Launching Soon!</p>
-                <p class="title has-text-weight-light">Join Today For Early Access</p>
-                <p class="has-text-weight-light">Subscribe to our mailing list to get latest updates</p>
-                <form class="mt-4">
-                    <div class="field has-addons is-justify-content-center">
-                        <div class="control">
-                            <input class="input" type="text" placeholder="name@domain.com">
-                        </div>
-                        <div class="control">
-                            <button class="button is-primary">Join Waitlist</button>
-                        </div>
-                    </div>
-                </form>
-
+  <section class="hero is-light is-medium has-gradient">
+    <div class="container">
+      <div class="hero-body">
+        <p class="title">Educate.</p>
+        <p class="title">Inspire.</p>
+        <p class="title">Discover East Africa.</p>
+        <form>
+          <p class="mb-4">
+            Save your favorite things to stack and share them easily with anyone
+          </p>
+          <div class="field has-addons">
+            <div class="control">
+              <input type="text" class="input" placeholder="name@domain.com" />
             </div>
 
-        </div>
-    </section>
+            <div class="control">
+              <button class="button is-primary">Join Waitlist</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 </template>
+
+<style scoped>
+.has-gradient {
+  background: linear-gradient(to right, #f5f5f5 55%, rgba(255, 255, 255, 0)),
+    url("src/assets/thomas.jpg") right center no-repeat;
+  background-size: cover;
+  background-position: center center center;
+}
+</style>
