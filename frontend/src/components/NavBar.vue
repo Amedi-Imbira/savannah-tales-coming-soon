@@ -15,12 +15,12 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar is-spaced has-shadow" role="navigation" aria-label="main navigation">
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a href="" class="navbar-item">
+      <RouterLink to="/" class="navbar-item">
         <img src="../assets/logoo.png" />
         <span class="title is-4">Savannah Tales</span>
-      </a>
+      </RouterLink>
 
       <a 
         role="button" 
@@ -35,11 +35,11 @@ export default {
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
-      </a>
+    </a>
     </div>
     <div class="navbar-menu" :class="{'is-active': isActive}">
       <div class="navbar-start">
-            <a href="" class="navbar-item">About Us</a>
+            <RouterLink to="/about" class="navbar-item">About Us</RouterLink>
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
