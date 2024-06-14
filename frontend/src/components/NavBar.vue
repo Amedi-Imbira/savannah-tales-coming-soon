@@ -44,9 +44,16 @@ export default {
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a href="" class="button is-light">facebook</a>
-            <a href="" class="button is-light">linkedin</a>
-            <a href="" class="button is-light">twitter</a>
+            <!-- <font-awesome-icon icon="fa-solid fa-user-secret" /> -->
+            <RouterLink to="#" class="button is-text">
+              <font-awesome-icon icon="fa-brands fa-facebook" />
+            </RouterLink>
+            <RouterLink to="#" class="button is-text">
+              <font-awesome-icon icon="fa-brands fa-linkedin" />
+            </RouterLink>
+            <RouterLink to="#" class="button is-text">
+              <font-awesome-icon icon="fa-brands fa-twitter" />
+            </RouterLink>
           </div>
         </div>
       </div>
