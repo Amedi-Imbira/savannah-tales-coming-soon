@@ -21,6 +21,7 @@ export default {
         <img src="../assets/logoo.png" />
         <span class="title is-4">Savannah Tales</span>
       </RouterLink>
+      <span class="tag is-danger mt-4">Coming Soon</span>
 
       <a 
         role="button" 
@@ -38,13 +39,10 @@ export default {
     </a>
     </div>
     <div class="navbar-menu" :class="{'is-active': isActive}">
-      <div class="navbar-start">
-            <RouterLink to="/about" class="navbar-item">About Us</RouterLink>
-      </div>
       <div class="navbar-end">
+        <RouterLink to="/about" class="navbar-item">About Us</RouterLink>
         <div class="navbar-item">
           <div class="buttons">
-            <!-- <font-awesome-icon icon="fa-solid fa-user-secret" /> -->
             <RouterLink to="#" class="button is-text">
               <font-awesome-icon icon="fa-brands fa-facebook" />
             </RouterLink>

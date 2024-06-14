@@ -7,7 +7,7 @@
         <p class="title">Discover East Africa.</p>
         <form>
           <p class="mb-4">
-            Save your favorite things to stack and share them easily with anyone
+            A microblogging platform of the people of the soil from Savannah
           </p>
           <div class="field has-addons">
             <div class="control">

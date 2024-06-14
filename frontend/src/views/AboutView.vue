@@ -12,7 +12,7 @@ export default {
   <NavBar />
 
   <section class="section">
-    <h2 class="subtitle is-1">Everyone has a story to tell.</h2>
+    <h2 class="subtitle is-1">You are an elder.</h2>
     <div class="columns">
       <div class="column">
         <p class="mb-4">
