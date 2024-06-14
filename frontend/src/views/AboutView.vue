@@ -15,7 +15,7 @@ export default {
     <h2 class="subtitle is-1">Everyone has a story to tell.</h2>
     <div class="columns">
       <div class="column">
-        <p>
+        <p class="mb-4">
           Savannah Tales is a home for East African stories and ideas. Here,
           anyone can share insightful perspectives, useful knowledge, and life
           wisdom within the region. Most platforms are noisy and chaotic;
@@ -31,7 +31,7 @@ export default {
           region through the power of writing. Then spread this unique culture
           to the rest of the world.
         </p>
-        <p>
+        <p class="mb-4">
           We’re building a space for professional writers to do what they do
           best. But you don’t have to be one, anyone with a burning story is
           free to share their wisdom. Whether you’re a CEO, computer scientist,
