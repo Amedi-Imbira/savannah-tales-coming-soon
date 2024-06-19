@@ -35,8 +35,6 @@ export default {
           </div>
           <div id="navbarMenuHeroB" class="navbar-menu">
             <div class="navbar-end">
-
-              <a href="#" class="navbar-item">About Us</a>
               <div class="buttons">
                 <a class="navbar-item button is-outlined">
                   <font-awesome-icon icon="fa-brands fa-linkedin" /> LinkedIn
@@ -52,35 +50,36 @@ export default {
     </div>
 
     <div class="hero-body">
-      <div class="container">
-        <p class="title is-2">Divine wisdom from the elders await</p>
-        <p class="subtitle">
-          Elevate your essay writing game with these AI prompts from Clickup.
-          Craft compelling <br />
-          arguments
-        </p>
-        <div class="container" style="width: 40%; margin-left: 0">
-          <form>
-            <div class="field">
-              <div class="control">
-                <input
-                  type="text"
-                  class="input is-medium mb-4"
-                  placeholder="Enter your email"
-                />
-                <button class="button is-primary is-large">
-                  Join Waitlist
-                </button>
-              </div>
-            </div>
-          </form>
+      <div class="content">
+        <div class="block">
+          <p class="title is-2">Divine wisdom from the elders await</p>
         </div>
+
+        <div class="block">
+          <p class="subtitle">
+            A sacred place to read, write and deepen your understanding
+          </p>
+        </div>
+
+        <form class="block" style="width: 40%; margin-left: 0">
+          <div class="field">
+            <div class="control">
+              <input
+                type="text"
+                class="input is-medium mb-4"
+                placeholder="Enter your email"
+              />
+              <button class="button is-primary is-large">
+                Join Our Waitlist
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </section>
 
   <AboutUs />
-  
 </template>
 
 <style scoped>

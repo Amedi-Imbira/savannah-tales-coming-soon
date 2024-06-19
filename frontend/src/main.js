@@ -1,5 +1,6 @@
 // import './assets/styles/css/main.css'
 import './assets/styles/sass/style.scss'
+import './assets/styles/sass/custom-bulma.scss'
 
 import { createApp } from 'vue'
 import App from './App.vue'

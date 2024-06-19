@@ -1,10 +1,13 @@
 <template>
-  <section class="section">
+  <section class="section absolute">
     <div class="container">
       <div class="box">
         <div class="content is-medium">
           <p class="title is-1 has-text-centered">Anyone can be an elder</p>
-          <p></p>
+          <p class="content is-normal">
+            <i><strong>Savannah labels an elder as a wise, dignified and a powerful figure,
+            who keeps the culture alive and guides the young.</strong></i>
+          </p>
           <p>
             In the not-so-distant past, elders of the Savannah were highly
             respected figures. Their word held immense respect, and their wisdom
@@ -28,7 +31,7 @@
             noisy and chaotic, Savannah Tales is calm and serene, just like the
             shrines of the Savannah.
           </p>
-          <p class="subtitle is-4">
+          <p class="subtitle is-4 has-background-light p-2">
             Ultimately, our main goal is to embrace and spread the Savannah
             culture through the power of writing. We envision a world where
             Savannah culture stands alongside great cultural legacies such as
@@ -45,3 +48,10 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.absolute {
+      position: absolute;
+      top: 75%;
+}
+</style>
