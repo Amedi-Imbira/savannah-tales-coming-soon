@@ -53,5 +53,6 @@
 .absolute {
       position: absolute;
       top: 75%;
+      left: 4%;
 }
 </style>

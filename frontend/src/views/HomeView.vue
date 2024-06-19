@@ -66,10 +66,10 @@ export default {
             <div class="control">
               <input
                 type="text"
-                class="input is-medium mb-4"
+                class="input mb-4"
                 placeholder="Enter your email"
               />
-              <button class="button is-primary is-large">
+              <button class="button is-primary">
                 Join Our Waitlist
               </button>
             </div>
