@@ -15,7 +15,7 @@ export default {
   methods: {
     async submitEmail() {
       try {
-        const response = await axios.post('http://localhost:3000/waitlist', {email: this.email});
+        const response = await axios.post('http://localhost:5000/api/posts', {email: this.email});
         console.log('Response: ', response.data);
         alert('Email added to waitlist successfully!');
         this.email='';

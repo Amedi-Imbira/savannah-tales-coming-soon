@@ -6,13 +6,10 @@ class Email extends Model {}
 Email.init({
       email: {
             type: DataTypes.STRING
-      },
-      created_at: {
-            type: DataTypes.DATE
       }
 }, {
       sequelize,
       modelName:'email'
 })
 
-model.exports = Email;
+module.exports = Email;
