@@ -1,5 +1,5 @@
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 import AboutUs from "@/components/AboutUs.vue";
 
@@ -9,23 +9,29 @@ export default {
   },
   data() {
     return {
-      email: '',
-    }
+      email: "",
+      isActive: false,
+    };
   },
   methods: {
     async submitEmail() {
       try {
-        const response = await axios.post('http://localhost:5000/api/posts', {email: this.email});
-        console.log('Response: ', response.data);
-        alert('Email added to waitlist successfully!');
-        this.email='';
-        
+        const response = await axios.post("http://localhost:5000/api/posts", {
+          email: this.email,
+        });
+        console.log("Response: ", response.data);
+        alert("Email added to waitlist successfully!");
+        this.email = "";
       } catch (error) {
-        console.error('Error adding email to waitlist: ', error);
-        alert('Failed to add email to waitlist. Please try again');
+        console.error("Error adding email to waitlist: ", error);
+        alert("Failed to add email to waitlist. Please try again");
       }
-    }
-  }
+    },
+
+    displayMenu() {
+      this.isActive = !this.isActive;
+    },
+  },
 };
 </script>
 
@@ -43,22 +49,29 @@ export default {
               <strong>Savannah Tales </strong>
               <span class="tag is-danger ml-2"> Coming soon</span>
             </a>
-            <span class="navbar-burger" data-target="navbarMenuHeroB">
+            <span
+              class="navbar-burger"
+              :class="{ 'is-active': this.isActive }"
+              data-target="navbarMenuHeroB"
+              @click="displayMenu"
+            >
               <span></span>
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
-          <div id="navbarMenuHeroB" class="navbar-menu">
+          <div id="navbarMenuHeroB" class="navbar-menu" :class="{'is-active': isActive}">
             <div class="navbar-end">
-              <div class="buttons">
-                <a class="navbar-item button is-outlined">
-                  <font-awesome-icon icon="fa-brands fa-linkedin" /> LinkedIn
-                </a>
-                <a class="navbar-item button is-outlined">
-                  <font-awesome-icon icon="fa-brands fa-twitter" /> Twitter</a
-                >
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="navbar-item is-primary">
+                    <font-awesome-icon icon="fa-brands fa-linkedin" /> LinkedIn
+                  </a>
+                  <a class="navbar-item">
+                    <font-awesome-icon icon="fa-brands fa-twitter" /> Twitter</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -74,15 +87,18 @@ export default {
 
         <div class="block">
           <p class="subtitle">
-            A sacred place to read, write and deepen your understanding
+            A sacred place to read, write and deepen <br /> your understanding of the Savannah
           </p>
         </div>
 
-        <form 
-          class="block" 
+        <form
+          class="block"
           style="width: 40%; margin-left: 0"
           @submit.prevent="submitEmail"
         >
+        <div class="block">
+          skldfjskldfj 
+        </div>
           <div class="field">
             <div class="control">
               <input
