@@ -1,14 +1,31 @@
 <script>
-import NavBar from "@/components/NavBar.vue";
-import Hero from "@/components/Hero.vue";
+import axios from 'axios'
+
 import AboutUs from "@/components/AboutUs.vue";
 
 export default {
   components: {
-    NavBar,
-    Hero,
     AboutUs,
   },
+  data() {
+    return {
+      email: '',
+    }
+  },
+  methods: {
+    async submitEmail() {
+      try {
+        const response = await axios.post('http://localhost:3000/waitlist', {email: this.email});
+        console.log('Response: ', response.data);
+        alert('Email added to waitlist successfully!');
+        this.email='';
+        
+      } catch (error) {
+        console.error('Error adding email to waitlist: ', error);
+        alert('Failed to add email to waitlist. Please try again');
+      }
+    }
+  }
 };
 </script>
 
@@ -61,15 +78,20 @@ export default {
           </p>
         </div>
 
-        <form class="block" style="width: 40%; margin-left: 0">
+        <form 
+          class="block" 
+          style="width: 40%; margin-left: 0"
+          @submit.prevent="submitEmail"
+        >
           <div class="field">
             <div class="control">
               <input
+                v-model="email"
                 type="text"
                 class="input mb-4"
                 placeholder="Enter your email"
               />
-              <button class="button is-primary">
+              <button type="submit" class="button is-primary">
                 Join Our Waitlist
               </button>
             </div>
